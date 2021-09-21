@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 /* /Common rules
@@ -21,6 +21,9 @@
 .debug .nav{
     height: 30px;
     background: rgb(167, 167, 167);
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
 }
 .debug .nav_window{
     background: lightslategrey;
@@ -37,17 +40,23 @@
 }
 .debug .content_nav{
     background: navajowhite;
-    height: 50px;
+    /* height: 50px; */
 }
 .debug .nav_right, .debug .nav_left, .debug .nav_center{
-    background: rgb(245, 232, 87);
-    width: 100px;
-    height: 50px;
+    background: rgb(36, 36, 36);
+    /* width: 200px; */
+    
+    /* height: 50px; */
+}
+.debug .nav_center{
+    /* width: 400px; */
 }
 .debug .video{
     height: 100px;
     width: 200px;
-    background: palevioletred;
+    background-image: url("https://thispersondoesnotexist.com/image");
+    background-size: cover;
+    background-position: center;
     position: relative;
     margin: 0.5rem 0;
 }
@@ -61,7 +70,10 @@
 /* /Debug 
 ************/
 
-
+.img{
+    background-size: contain;
+    position: relative;
+}
 
 /* *********
 utility */
@@ -77,10 +89,22 @@ utility */
 .f_l{
     float: left;
 }
-
+.i_b{
+    display: inline-block;
+}
 /*utility*
 ************/
-
+/* Window */
+.title{
+    justify-self: center;
+}
+.censured{
+    background: gray;
+    border: 3px solid white;
+    width: 130px;
+    height: 16px;
+    vertical-align: -2px;
+}
 /* content */
 .content{
     position: relative;
@@ -90,6 +114,13 @@ utility */
     position: absolute;
     right: 0;
     top: 0;
+    color: white;
+   
+}
+.view, .screen{
+    background: rgb(49, 49, 49);
+    padding: 5px;
+    border-radius: 5px;
 }
 .container_win{
     justify-content: space-between;
@@ -106,7 +137,23 @@ utility */
 /* navbar content*/
 .content_nav{
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     bottom: 0;
     width: 100%;
+    color: rgb(220, 220, 220);
+    text-align: center;
+    font-size: 20px;
+}
+.icon{
+    margin: 10px;
+}
+.icon .fas{
+    font-size: 25px;
+}
+.arrow{
+    position: relative;
+    bottom:10px;
+    font-size: 15px;
+    margin-right: 10px;
 }

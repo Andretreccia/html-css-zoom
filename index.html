@@ -7,17 +7,39 @@
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+            <title>Document</title>
     </head>
     <body class="debug">
+        <!-- Finestra -->
         <div class="window">
-            <div class="nav"></div>
+            <div class="nav flex">
+                <div class="buttons">
+                    <i class="fas fa-circle"></i>
+                    <i class="fas fa-circle"></i>
+                    <i class="fas fa-circle"></i>
+                </div>
+                <div class="title">
+                    <h2 class="i_b">Zoom Meeting ID: </h2>
+                    <div class="censured i_b"></div>
+                </div>
+                <div class="future"></div>
+            </div>
+            <!-- contenuto finestra -->
             <div class="content">
                 <div class="view_option">
-                    gSpeaker view
+                    <div class="view i_b">
+                        <span> <i class="fas fa-window-maximize"></i> Speaker View</span>
+                    </div>
+                    <div class="screen i_b">
+                        <i class="fas fa-compress-arrows-alt su"></i>
+                    </div>
                 </div>
                 <div class="container_win flex">
                     <div class="left"></div>
+                    <!-- Parte centrale con il contenuto di tutte le webcam -->
                     <div class="center flex">
 
                         <div class="video">
@@ -45,116 +67,81 @@
                                 asdfasdf
                             </div>
                         </div>
-                        <div class="video">
-                            <div class="name">
-                                asdfasdf
-                            </div>
-                        </div>
-                        <div class="video">
-                            <div class="name">
-                                asdfasdf
-                            </div>
-                        </div>
-                        <div class="video">
-                            <div class="name">
-                                asdfasdf
-                            </div>
-                        </div>
-                        <div class="video">
-                            <div class="name">
-                                asdfasdf
-                            </div>
-                        </div>
-                        <div class="video">
-                            <div class="name">
-                                asdfasdf
-                            </div>
-                        </div>
-                        <div class="video">
-                            <div class="name">
-                                asdfasdf
-                            </div>
-                        </div>
-                        <div class="video">
-                            <div class="name">
-                                asdfasdf
-                            </div>
-                        </div>
-                        <div class="video">
-                            <div class="name">
-                                asdfasdf
-                            </div>
-                        </div>
-                        <div class="video">
-                            <div class="name">
-                                asdfasdf
-                            </div>
-                        </div>
-                        <div class="video">
-                            <div class="name">
-                                asdfasdf
-                            </div>
-                        </div>
-                        <div class="video">
-                            <div class="name">
-                                asdfasdf
-                            </div>
-                        </div>
-                        <div class="video">
-                            <div class="name">
-                                asdfasdf
-                            </div>
-                        </div>
-                        <div class="video">
-                            <div class="name">
-                                asdfasdf
-                            </div>
-                        </div>
-                        <div class="video">
-                            <div class="name">
-                                asdfasdf
-                            </div>
-                        </div>
-                        <div class="video">
-                            <div class="name">
-                                asdfasdf
-                            </div>
-                        </div>
-                        <div class="video">
-                            <div class="name">
-                                asdfasdf
-                            </div>
-                        </div>
-                        <div class="video">
-                            <div class="name">
-                                asdfasdf
-                            </div>
-                        </div>
-                        <div class="video">
-                            <div class="name">
-                                asdfasdf
-                            </div>
-                        </div>
-                        <div class="video">
-                            <div class="name">
-                                asdfasdf
-                            </div>
-                        </div>
-                        <div class="video">
-                            <div class="name">
-                                asdfasdf
-                            </div>
-                        </div>
+                        
 
 
 
                     </div>
                     <div class="right"></div>
                 </div>
+                <!-- barra di navigazione in basso -->
                 <nav class="content_nav flex">
-                    <div class="nav_left"></div>
-                    <div class="nav_center"></div>
-                    <div class="nav_right"></div>
+                    <div class="nav_left">
+                        <div class="microphonen i_b">
+                            <div class="icon i_b">
+                                <i class="fas fa-microphone"></i>
+                                <h6>Mute</h6>
+                            </div>
+                            <div class="arrow i_b">
+                                    <i class="fas fa-chevron-up"></i>
+                                </div>
+                            
+                        </div>
+                        <div class="webcam i_b">
+                            <div class="icon i_b">
+                                
+                                <i class="fas fa-video"></i>
+                                <h6>Stop Video</h6>
+                            </div>
+                            <div class=" arrow i_b">
+                                <i class="fas fa-chevron-up"></i>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="nav_center">
+                        <div class="icon i_b">
+                            <i class="fas fa-user-plus"></i>
+                            <h6>Invite</h6>
+                        </div>
+                        <div class="icon i_b">
+                            <i class="fas fa-user-friends"></i>
+                            <h6>Manage Partcipants</h6>
+                        </div>
+                        <div class="icon i_b">
+                            <i class="far fa-chart-bar"></i>
+                            <h6>Polling</h6>
+                        </div>
+                        <div class="webcam i_b">
+                            <div class="icon i_b">
+                                <i class="fas fa-external-link-alt"></i>
+                                <h6>Share Screen</h6>
+                            </div>
+                            <div class=" arrow i_b">
+                                <i class="fas fa-chevron-up"></i>
+                            </div>
+                            
+                        </div>
+                        <div class="icon i_b">
+                            <i class="fas fa-comment-dots"></i>
+                            <h6>Chat</h6>
+                        </div>
+                        <div class="icon i_b">
+                            <i class="fas fa-record-vinyl"></i>
+                            <h6>Record</h6>
+                        </div>
+                        <div class="icon i_b">
+                            <i class="fas fa-th-large"></i>
+                            <h6>Breakout Rooms</h6>
+                        </div>
+                        <div class="icon i_b">
+                            <i class="fas fa-ellipsis-h"></i>
+                            <h6>More</h6>
+                        </div>
+                    </div>
+                    <div class="nav_right">
+                        END MEETING
+                    </div>
                 </nav>
             </div>
         </div>
