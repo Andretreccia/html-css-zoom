@@ -155,7 +155,7 @@ utility */
     background: black;
 }
 .center{
-   
+   flex-grow: 1;
 }
 .left, .right{
     flex-grow: 0;
