@@ -6,9 +6,7 @@
     padding: 0;
 
 }
-body{
-   
-}
+
 /* /Common rules
 **************** */
 
@@ -30,26 +28,54 @@ body{
 }
 .debug .left, .debug .right{
     background: lightsteelblue;
-    height: 700px;
+    
     width: 50px;
 }
 .debug .center{
     background: mediumseagreen;
-    height: 700px;
     width: 50px;
 }
 .debug .content_nav{
     background: navajowhite;
     height: 50px;
 }
+.debug .nav_right, .debug .nav_left, .debug .nav_center{
+    background: rgb(245, 232, 87);
+    width: 100px;
+    height: 50px;
+}
+.debug .video{
+    height: 100px;
+    width: 200px;
+    background: palevioletred;
+    position: relative;
+    margin: 0.5rem 0;
+}
+.debug .name{
+    background: rgba(0, 0, 0, 0.452);
+    color: white;
+    display: inline;
+    position: absolute;
+    bottom: 0;
+}
 /* /Debug 
 ************/
 
 
+
 /* *********
 utility */
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+
+}
 .flex{
     display: flex;
+}
+.f_l{
+    float: left;
 }
 
 /*utility*
@@ -71,7 +97,16 @@ utility */
 }
 .center{
     flex-grow: 5;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .left, .right{
     flex-grow: 0;
+}
+/* navbar content*/
+.content_nav{
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
