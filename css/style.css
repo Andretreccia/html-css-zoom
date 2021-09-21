@@ -14,89 +14,110 @@
 /***********
  Debug */
 .debug .window{
-    background-color: gray;
+    background-color: black;
     width: 100%;
-    border: 2px solid rgb(180, 77, 77) ;
+    border: 2px solid rgb(240, 240, 240) ;
 }
 .debug .nav{
     height: 30px;
-    background: rgb(167, 167, 167);
+    /* background: rgb(167, 167, 167); */
     justify-content: space-between;
     align-items: center;
     font-size: 12px;
 }
 .debug .nav_window{
-    background: lightslategrey;
+    /* background: lightslategrey; */
     width: 100px;
 }
 .debug .left, .debug .right{
-    background: lightsteelblue;
+    /* background: lightsteelblue; */
     
     width: 50px;
 }
 .debug .center{
-    background: mediumseagreen;
+    /* background: mediumseagreen; */
     width: 50px;
 }
 .debug .content_nav{
-    background: navajowhite;
+    /* background: navajowhite; */
     /* height: 50px; */
 }
 .debug .nav_right, .debug .nav_left, .debug .nav_center{
-    background: rgb(36, 36, 36);
+    /* background: rgb(36, 36, 36); */
     /* width: 200px; */
     
     /* height: 50px; */
 }
-.debug .nav_center{
-    /* width: 400px; */
-}
+
 .debug .video{
-    height: 100px;
-    width: 200px;
-    background-image: url("https://thispersondoesnotexist.com/image");
-    background-size: cover;
-    background-position: center;
+    /* height: 100px;
+    width: 200px; */
+   /*  background-size: cover;
+    background-position: center; */
     position: relative;
-    margin: 0.5rem 0;
 }
 .debug .name{
     background: rgba(0, 0, 0, 0.452);
     color: white;
     display: inline;
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
+    left: 0;
 }
 /* /Debug 
 ************/
 
-.img{
-    background-size: contain;
-    position: relative;
-}
 
 /* *********
 utility */
-.clearfix{
+
+/* .clearfix{
     content: "";
     display: table;
     clear: both;
-
-}
+} */
 .flex{
     display: flex;
 }
-.f_l{
+/* .f_l{
     float: left;
-}
+} */
 .i_b{
     display: inline-block;
+}
+/* background Color */
+.bdgry{
+    background: rgb(35, 36, 39);
+}
+.blgry{
+    background: rgb(229, 229, 229);
+}
+/* color */
+.red{
+    color: rgb(252, 97, 93) ;
+}
+.ylw{
+    color: rgb(253, 188, 65);
+}
+.grn{
+    color:rgb(51, 199, 74);
+}
+.lbl{
+    color:rgb(57, 187, 252)
+}
+.gry{
+    color: rgb(127, 127, 127);
 }
 /*utility*
 ************/
 /* Window */
-.title{
-    justify-self: center;
+.window{
+    margin: auto;
+    position: relative;
+    max-height: 800px ;
+}
+.buttons span{
+    margin: 2px;
 }
 .censured{
     background: gray;
@@ -112,8 +133,8 @@ utility */
 }
 .view_option{
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 10px;
+    top: 10px;
     color: white;
    
 }
@@ -125,6 +146,13 @@ utility */
 .container_win{
     justify-content: space-between;
     align-items: stretch;
+    margin-top: 15px;
+    background: black;
+}
+.left, .right{
+    justify-content: center;
+    align-items: center;
+    background: black;
 }
 .center{
     flex-grow: 5;
@@ -133,17 +161,28 @@ utility */
 }
 .left, .right{
     flex-grow: 0;
+    font-size: 20px;
+    color: white;
+}
+.left .fas, .right .fas{
+    font-size: 50px;
+}
+.video{
+    flex-grow: 5;
+}
+.left:hover, .right:hover{
+    cursor: pointer;
 }
 /* navbar content*/
 .content_nav{
     justify-content: space-between;
     align-items: center;
-    position: fixed;
     bottom: 0;
     width: 100%;
     color: rgb(220, 220, 220);
     text-align: center;
     font-size: 20px;
+   
 }
 .icon{
     margin: 10px;
@@ -156,4 +195,16 @@ utility */
     bottom:10px;
     font-size: 15px;
     margin-right: 10px;
+}
+.arrow:hover{
+    cursor: pointer;
+}
+.icon:hover{
+    cursor: pointer;
+    filter: brightness(90);
+}
+.close{
+    padding: 25px 10px;
+   background:gray;
+   color: rgb(185, 61, 61);
 }
