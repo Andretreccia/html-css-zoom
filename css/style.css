@@ -24,6 +24,7 @@
     justify-content: space-between;
     align-items: center;
     font-size: 12px;
+    
 }
 .debug .nav_window{
     /* background: lightslategrey; */
@@ -145,7 +146,6 @@ utility */
 }
 .container_win{
     justify-content: space-between;
-    align-items: stretch;
     margin-top: 15px;
     background: black;
 }
@@ -155,9 +155,7 @@ utility */
     background: black;
 }
 .center{
-    flex-grow: 5;
-    justify-content: space-around;
-    flex-wrap: wrap;
+   
 }
 .left, .right{
     flex-grow: 0;
