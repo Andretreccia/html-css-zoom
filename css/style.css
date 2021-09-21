@@ -1,0 +1,77 @@
+/*************
+ Common rules */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+   
+}
+/* /Common rules
+**************** */
+
+
+/***********
+ Debug */
+.debug .window{
+    background-color: gray;
+    width: 100%;
+    border: 2px solid rgb(180, 77, 77) ;
+}
+.debug .nav{
+    height: 30px;
+    background: rgb(167, 167, 167);
+}
+.debug .nav_window{
+    background: lightslategrey;
+    width: 100px;
+}
+.debug .left, .debug .right{
+    background: lightsteelblue;
+    height: 700px;
+    width: 50px;
+}
+.debug .center{
+    background: mediumseagreen;
+    height: 700px;
+    width: 50px;
+}
+.debug .content_nav{
+    background: navajowhite;
+    height: 50px;
+}
+/* /Debug 
+************/
+
+
+/* *********
+utility */
+.flex{
+    display: flex;
+}
+
+/*utility*
+************/
+
+/* content */
+.content{
+    position: relative;
+    padding-top: 2rem;
+}
+.view_option{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.container_win{
+    justify-content: space-between;
+    align-items: stretch;
+}
+.center{
+    flex-grow: 5;
+}
+.left, .right{
+    flex-grow: 0;
+}
