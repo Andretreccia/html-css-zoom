@@ -15,7 +15,7 @@
  Debug */
 .debug .window{
     background-color: black;
-    width: 100%;
+    width: 1440px;
     border: 2px solid rgb(240, 240, 240) ;
 }
 .debug .nav{
@@ -24,7 +24,6 @@
     justify-content: space-between;
     align-items: center;
     font-size: 12px;
-    
 }
 .debug .nav_window{
     /* background: lightslategrey; */
@@ -56,6 +55,7 @@
    /*  background-size: cover;
     background-position: center; */
     position: relative;
+    margin: 0.5rem 0;
 }
 .debug .name{
     background: rgba(0, 0, 0, 0.452);
@@ -146,6 +146,7 @@ utility */
 }
 .container_win{
     justify-content: space-between;
+    align-items: stretch;
     margin-top: 15px;
     background: black;
 }
@@ -155,7 +156,9 @@ utility */
     background: black;
 }
 .center{
-   flex-grow: 1;
+    flex-grow: 5;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .left, .right{
     flex-grow: 0;
@@ -203,6 +206,6 @@ utility */
 }
 .close{
     padding: 25px 10px;
-   background:gray;
+   background: rgb(75, 76, 79);
    color: rgb(185, 61, 61);
 }
